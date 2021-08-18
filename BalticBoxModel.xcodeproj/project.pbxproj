@@ -3,24 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13AD0A5226CD20D8004336F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0A5126CD20D8004336F8 /* AppDelegate.swift */; };
-		13AD0A5426CD20D8004336F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0A5326CD20D8004336F8 /* ViewController.swift */; };
 		13AD0A5626CD20D9004336F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AD0A5526CD20D9004336F8 /* Assets.xcassets */; };
-		13AD0A5926CD20D9004336F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AD0A5726CD20D9004336F8 /* Main.storyboard */; };
+		13AD0A6326CD2162004336F8 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 13AD0A6226CD2162004336F8 /* CorePlot */; };
+		13AD0A6626CD21C5004336F8 /* TPload1900_2017.csv in Resources */ = {isa = PBXBuildFile; fileRef = 13AD0A6526CD21C5004336F8 /* TPload1900_2017.csv */; };
+		13AD0ACF26CD223D004336F8 /* BoxModelManual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13AD0ACE26CD223D004336F8 /* BoxModelManual.pdf */; };
+		13AD0AE026CD2284004336F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AD0AD026CD2284004336F8 /* Main.storyboard */; };
+		13AD0AE126CD2284004336F8 /* SteadyStatePlotGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD126CD2284004336F8 /* SteadyStatePlotGenerator.swift */; };
+		13AD0AE226CD2284004336F8 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD226CD2284004336F8 /* PlotViewController.swift */; };
+		13AD0AE326CD2284004336F8 /* PlotGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD326CD2284004336F8 /* PlotGenerator.swift */; };
+		13AD0AE426CD2284004336F8 /* TotalsSteadyStatePlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD426CD2284004336F8 /* TotalsSteadyStatePlotViewController.swift */; };
+		13AD0AE526CD2284004336F8 /* boxWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD526CD2284004336F8 /* boxWindowController.swift */; };
+		13AD0AE626CD2284004336F8 /* DocumentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD626CD2284004336F8 /* DocumentationViewController.swift */; };
+		13AD0AE726CD2284004336F8 /* ExportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD726CD2284004336F8 /* ExportData.swift */; };
+		13AD0AE826CD2284004336F8 /* SpectraPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD826CD2284004336F8 /* SpectraPlotViewController.swift */; };
+		13AD0AE926CD2284004336F8 /* ParameterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AD926CD2284004336F8 /* ParameterTableViewController.swift */; };
+		13AD0AEA26CD2284004336F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0ADA26CD2284004336F8 /* AppDelegate.swift */; };
+		13AD0AEB26CD2284004336F8 /* OxygenSolutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0ADB26CD2284004336F8 /* OxygenSolutionsViewController.swift */; };
+		13AD0AEC26CD2284004336F8 /* TimeSeriesAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0ADC26CD2284004336F8 /* TimeSeriesAnalysis.swift */; };
+		13AD0AED26CD2284004336F8 /* TotalsPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0ADD26CD2284004336F8 /* TotalsPlotViewController.swift */; };
+		13AD0AEF26CD2284004336F8 /* SteadyStatePlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0ADF26CD2284004336F8 /* SteadyStatePlotViewController.swift */; };
+		13AD0AFC26CD24E8004336F8 /* SedimentationBasedSigmoidG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF126CD24E7004336F8 /* SedimentationBasedSigmoidG.swift */; };
+		13AD0AFD26CD24E8004336F8 /* MineralizationBasedSigmoidG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF226CD24E7004336F8 /* MineralizationBasedSigmoidG.swift */; };
+		13AD0AFE26CD24E8004336F8 /* SimplifiedGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF326CD24E7004336F8 /* SimplifiedGeneric.swift */; };
+		13AD0AFF26CD24E8004336F8 /* RandomParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF426CD24E7004336F8 /* RandomParameter.swift */; };
+		13AD0B0026CD24E8004336F8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF526CD24E7004336F8 /* Model.swift */; };
+		13AD0B0126CD24E8004336F8 /* LinearG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF626CD24E7004336F8 /* LinearG.swift */; };
+		13AD0B0226CD24E8004336F8 /* StepFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF726CD24E7004336F8 /* StepFunction.swift */; };
+		13AD0B0326CD24E8004336F8 /* ModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF826CD24E7004336F8 /* ModelSpecs.swift */; };
+		13AD0B0426CD24E8004336F8 /* NewTwoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AF926CD24E7004336F8 /* NewTwoLayer.swift */; };
+		13AD0B0526CD24E8004336F8 /* ModifiedAlphaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AFA26CD24E8004336F8 /* ModifiedAlphaModel.swift */; };
+		13AD0B0626CD24E8004336F8 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0AFB26CD24E8004336F8 /* Parameter.swift */; };
+		13AD0B0B26CD2523004336F8 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0B0826CD2522004336F8 /* Combinations.swift */; };
+		13AD0B0C26CD2523004336F8 /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0B0926CD2522004336F8 /* Complex.swift */; };
+		13AD0B0D26CD2523004336F8 /* Roots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD0B0A26CD2523004336F8 /* Roots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13AD0A4E26CD20D8004336F8 /* BalticBoxModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalticBoxModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13AD0A5126CD20D8004336F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13AD0A5326CD20D8004336F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13AD0A5526CD20D9004336F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13AD0A5826CD20D9004336F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13AD0A5A26CD20D9004336F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13AD0A5B26CD20D9004336F8 /* BalticBoxModel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BalticBoxModel.entitlements; sourceTree = "<group>"; };
+		13AD0A6526CD21C5004336F8 /* TPload1900_2017.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TPload1900_2017.csv; sourceTree = "<group>"; };
+		13AD0ACE26CD223D004336F8 /* BoxModelManual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BoxModelManual.pdf; sourceTree = "<group>"; };
+		13AD0AD026CD2284004336F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		13AD0AD126CD2284004336F8 /* SteadyStatePlotGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadyStatePlotGenerator.swift; sourceTree = "<group>"; };
+		13AD0AD226CD2284004336F8 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		13AD0AD326CD2284004336F8 /* PlotGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotGenerator.swift; sourceTree = "<group>"; };
+		13AD0AD426CD2284004336F8 /* TotalsSteadyStatePlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsSteadyStatePlotViewController.swift; sourceTree = "<group>"; };
+		13AD0AD526CD2284004336F8 /* boxWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = boxWindowController.swift; sourceTree = "<group>"; };
+		13AD0AD626CD2284004336F8 /* DocumentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentationViewController.swift; sourceTree = "<group>"; };
+		13AD0AD726CD2284004336F8 /* ExportData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportData.swift; sourceTree = "<group>"; };
+		13AD0AD826CD2284004336F8 /* SpectraPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectraPlotViewController.swift; sourceTree = "<group>"; };
+		13AD0AD926CD2284004336F8 /* ParameterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterTableViewController.swift; sourceTree = "<group>"; };
+		13AD0ADA26CD2284004336F8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13AD0ADB26CD2284004336F8 /* OxygenSolutionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxygenSolutionsViewController.swift; sourceTree = "<group>"; };
+		13AD0ADC26CD2284004336F8 /* TimeSeriesAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeriesAnalysis.swift; sourceTree = "<group>"; };
+		13AD0ADD26CD2284004336F8 /* TotalsPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsPlotViewController.swift; sourceTree = "<group>"; };
+		13AD0ADF26CD2284004336F8 /* SteadyStatePlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteadyStatePlotViewController.swift; sourceTree = "<group>"; };
+		13AD0AF126CD24E7004336F8 /* SedimentationBasedSigmoidG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SedimentationBasedSigmoidG.swift; sourceTree = "<group>"; };
+		13AD0AF226CD24E7004336F8 /* MineralizationBasedSigmoidG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineralizationBasedSigmoidG.swift; sourceTree = "<group>"; };
+		13AD0AF326CD24E7004336F8 /* SimplifiedGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplifiedGeneric.swift; sourceTree = "<group>"; };
+		13AD0AF426CD24E7004336F8 /* RandomParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomParameter.swift; sourceTree = "<group>"; };
+		13AD0AF526CD24E7004336F8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		13AD0AF626CD24E7004336F8 /* LinearG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearG.swift; sourceTree = "<group>"; };
+		13AD0AF726CD24E7004336F8 /* StepFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepFunction.swift; sourceTree = "<group>"; };
+		13AD0AF826CD24E7004336F8 /* ModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelSpecs.swift; sourceTree = "<group>"; };
+		13AD0AF926CD24E7004336F8 /* NewTwoLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTwoLayer.swift; sourceTree = "<group>"; };
+		13AD0AFA26CD24E8004336F8 /* ModifiedAlphaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifiedAlphaModel.swift; sourceTree = "<group>"; };
+		13AD0AFB26CD24E8004336F8 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		13AD0B0826CD2522004336F8 /* Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
+		13AD0B0926CD2522004336F8 /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
+		13AD0B0A26CD2523004336F8 /* Roots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AD0A6326CD2162004336F8 /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,14 +111,66 @@
 		13AD0A5026CD20D8004336F8 /* BalticBoxModel */ = {
 			isa = PBXGroup;
 			children = (
-				13AD0A5126CD20D8004336F8 /* AppDelegate.swift */,
-				13AD0A5326CD20D8004336F8 /* ViewController.swift */,
+				13AD0B1026CD2582004336F8 /* SupportingFiles */,
+				13AD0B0F26CD2559004336F8 /* ModelFiles */,
+				13AD0B0E26CD253C004336F8 /* RootSolvers */,
+				13AD0A6526CD21C5004336F8 /* TPload1900_2017.csv */,
+				13AD0ACE26CD223D004336F8 /* BoxModelManual.pdf */,
+				13AD0ADA26CD2284004336F8 /* AppDelegate.swift */,
+				13AD0AD526CD2284004336F8 /* boxWindowController.swift */,
+				13AD0AD626CD2284004336F8 /* DocumentationViewController.swift */,
+				13AD0AD726CD2284004336F8 /* ExportData.swift */,
+				13AD0AD026CD2284004336F8 /* Main.storyboard */,
+				13AD0ADB26CD2284004336F8 /* OxygenSolutionsViewController.swift */,
+				13AD0AD926CD2284004336F8 /* ParameterTableViewController.swift */,
+				13AD0AD326CD2284004336F8 /* PlotGenerator.swift */,
+				13AD0AD226CD2284004336F8 /* PlotViewController.swift */,
+				13AD0AD826CD2284004336F8 /* SpectraPlotViewController.swift */,
+				13AD0AD126CD2284004336F8 /* SteadyStatePlotGenerator.swift */,
+				13AD0ADF26CD2284004336F8 /* SteadyStatePlotViewController.swift */,
+				13AD0ADC26CD2284004336F8 /* TimeSeriesAnalysis.swift */,
+				13AD0ADD26CD2284004336F8 /* TotalsPlotViewController.swift */,
+				13AD0AD426CD2284004336F8 /* TotalsSteadyStatePlotViewController.swift */,
+			);
+			path = BalticBoxModel;
+			sourceTree = "<group>";
+		};
+		13AD0B0E26CD253C004336F8 /* RootSolvers */ = {
+			isa = PBXGroup;
+			children = (
+				13AD0B0826CD2522004336F8 /* Combinations.swift */,
+				13AD0B0926CD2522004336F8 /* Complex.swift */,
+				13AD0B0A26CD2523004336F8 /* Roots.swift */,
+			);
+			name = RootSolvers;
+			sourceTree = "<group>";
+		};
+		13AD0B0F26CD2559004336F8 /* ModelFiles */ = {
+			isa = PBXGroup;
+			children = (
+				13AD0AF626CD24E7004336F8 /* LinearG.swift */,
+				13AD0AF226CD24E7004336F8 /* MineralizationBasedSigmoidG.swift */,
+				13AD0AF526CD24E7004336F8 /* Model.swift */,
+				13AD0AF826CD24E7004336F8 /* ModelSpecs.swift */,
+				13AD0AFA26CD24E8004336F8 /* ModifiedAlphaModel.swift */,
+				13AD0AF926CD24E7004336F8 /* NewTwoLayer.swift */,
+				13AD0AFB26CD24E8004336F8 /* Parameter.swift */,
+				13AD0AF426CD24E7004336F8 /* RandomParameter.swift */,
+				13AD0AF126CD24E7004336F8 /* SedimentationBasedSigmoidG.swift */,
+				13AD0AF326CD24E7004336F8 /* SimplifiedGeneric.swift */,
+				13AD0AF726CD24E7004336F8 /* StepFunction.swift */,
+			);
+			name = ModelFiles;
+			sourceTree = "<group>";
+		};
+		13AD0B1026CD2582004336F8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				13AD0A5526CD20D9004336F8 /* Assets.xcassets */,
-				13AD0A5726CD20D9004336F8 /* Main.storyboard */,
 				13AD0A5A26CD20D9004336F8 /* Info.plist */,
 				13AD0A5B26CD20D9004336F8 /* BalticBoxModel.entitlements */,
 			);
-			path = BalticBoxModel;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +189,9 @@
 			dependencies = (
 			);
 			name = BalticBoxModel;
+			packageProductDependencies = (
+				13AD0A6226CD2162004336F8 /* CorePlot */,
+			);
 			productName = BalticBoxModel;
 			productReference = 13AD0A4E26CD20D8004336F8 /* BalticBoxModel.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +207,7 @@
 				TargetAttributes = {
 					13AD0A4D26CD20D8004336F8 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -106,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 13AD0A4526CD20D8004336F8;
+			packageReferences = (
+				13AD0A6126CD2162004336F8 /* XCRemoteSwiftPackageReference "core-plot" */,
+			);
 			productRefGroup = 13AD0A4F26CD20D8004336F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AD0A6626CD21C5004336F8 /* TPload1900_2017.csv in Resources */,
+				13AD0ACF26CD223D004336F8 /* BoxModelManual.pdf in Resources */,
 				13AD0A5626CD20D9004336F8 /* Assets.xcassets in Resources */,
-				13AD0A5926CD20D9004336F8 /* Main.storyboard in Resources */,
+				13AD0AE026CD2284004336F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,23 +251,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13AD0A5426CD20D8004336F8 /* ViewController.swift in Sources */,
-				13AD0A5226CD20D8004336F8 /* AppDelegate.swift in Sources */,
+				13AD0AE426CD2284004336F8 /* TotalsSteadyStatePlotViewController.swift in Sources */,
+				13AD0AE926CD2284004336F8 /* ParameterTableViewController.swift in Sources */,
+				13AD0AFC26CD24E8004336F8 /* SedimentationBasedSigmoidG.swift in Sources */,
+				13AD0AE126CD2284004336F8 /* SteadyStatePlotGenerator.swift in Sources */,
+				13AD0AE826CD2284004336F8 /* SpectraPlotViewController.swift in Sources */,
+				13AD0AFF26CD24E8004336F8 /* RandomParameter.swift in Sources */,
+				13AD0AFE26CD24E8004336F8 /* SimplifiedGeneric.swift in Sources */,
+				13AD0AEF26CD2284004336F8 /* SteadyStatePlotViewController.swift in Sources */,
+				13AD0AFD26CD24E8004336F8 /* MineralizationBasedSigmoidG.swift in Sources */,
+				13AD0AEB26CD2284004336F8 /* OxygenSolutionsViewController.swift in Sources */,
+				13AD0AE226CD2284004336F8 /* PlotViewController.swift in Sources */,
+				13AD0AE626CD2284004336F8 /* DocumentationViewController.swift in Sources */,
+				13AD0B0326CD24E8004336F8 /* ModelSpecs.swift in Sources */,
+				13AD0B0226CD24E8004336F8 /* StepFunction.swift in Sources */,
+				13AD0B0526CD24E8004336F8 /* ModifiedAlphaModel.swift in Sources */,
+				13AD0AE326CD2284004336F8 /* PlotGenerator.swift in Sources */,
+				13AD0AED26CD2284004336F8 /* TotalsPlotViewController.swift in Sources */,
+				13AD0B0126CD24E8004336F8 /* LinearG.swift in Sources */,
+				13AD0B0626CD24E8004336F8 /* Parameter.swift in Sources */,
+				13AD0B0026CD24E8004336F8 /* Model.swift in Sources */,
+				13AD0AE726CD2284004336F8 /* ExportData.swift in Sources */,
+				13AD0AEC26CD2284004336F8 /* TimeSeriesAnalysis.swift in Sources */,
+				13AD0B0D26CD2523004336F8 /* Roots.swift in Sources */,
+				13AD0B0B26CD2523004336F8 /* Combinations.swift in Sources */,
+				13AD0B0C26CD2523004336F8 /* Complex.swift in Sources */,
+				13AD0B0426CD24E8004336F8 /* NewTwoLayer.swift in Sources */,
+				13AD0AEA26CD2284004336F8 /* AppDelegate.swift in Sources */,
+				13AD0AE526CD2284004336F8 /* boxWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		13AD0A5726CD20D9004336F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13AD0A5826CD20D9004336F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		13AD0A5C26CD20D9004336F8 /* Debug */ = {
@@ -271,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BalticBoxModel/BalticBoxModel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -283,6 +418,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.su.nest.BalticBoxModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -292,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BalticBoxModel/BalticBoxModel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -304,6 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.su.nest.BalticBoxModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -330,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13AD0A6126CD2162004336F8 /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot";
+			requirement = {
+				branch = "release-2.4";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13AD0A6226CD2162004336F8 /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13AD0A6126CD2162004336F8 /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13AD0A4626CD20D8004336F8 /* Project object */;
 }
