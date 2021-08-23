@@ -64,19 +64,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func saveRun(_ sender: NSMenuItem) {
         let myExporter = ExportData()
-        let savePanel = NSSavePanel()
-        savePanel.allowedFileTypes = ["csv"]
-        savePanel.allowsOtherFileTypes = false
-        savePanel.canCreateDirectories = true
-        savePanel.directoryURL = URL(string: myExporter.outputPath)
-        savePanel.begin  { (result) -> Void in
-            if result == NSApplication.ModalResponse.OK {
-                let url = savePanel.url
+//        let savePanel = NSSavePanel()
+//        savePanel.allowedFileTypes = ["csv"]
+//        savePanel.allowsOtherFileTypes = false
+//        savePanel.canCreateDirectories = true
+//        savePanel.directoryURL = URL(fileURLWithPath: myExporter.outputPath)
+//        savePanel.begin  { (result) -> Void in
+//            if result == NSApplication.ModalResponse.OK {
+//                let url = savePanel.url
+        let url = URL(fileURLWithPath:myExporter.outputPath, isDirectory: true)
+        let fileName = url.lastPathComponent + ".csv"
+        let urlToFile = url.appendingPathComponent(fileName)
                 let center = NotificationCenter.default
-                let notification = Notification(name: Notification.Name(rawValue: SAVE.Notification), object: self, userInfo: [SAVE.URL: url!, SAVE.ExporterInstance: myExporter])
+                let notification = Notification(name: Notification.Name(rawValue: SAVE.Notification), object: self, userInfo: [SAVE.URL: urlToFile, SAVE.ExporterInstance: myExporter])
                 center.post(notification)
-            }
-        }
+//            }
+//        }
     }
     
     
