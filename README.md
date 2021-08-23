@@ -5,6 +5,12 @@ This model is coded in Swift for use on MacOS. It extensively uses Core-Plot pac
 
 The code is provided "as is", without support and proper documentation. 
 
+The code will crash under certain circumstances. 
+
+Parameters, data and graphs will be saved to <user>/Documents/boxModel when menu item save is used
+
+Previous parameter settings may be loaded by using menu item open
+
 A compiled app is supplied in the Release.
 
 This software is distributed under the MIT Licence:
