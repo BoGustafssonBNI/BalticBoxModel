@@ -906,7 +906,7 @@ class SimplifiedGeneric: ModelSpecs {
             dphido2 = pv["regenerationRate"]! * b2 * dalphabetado2
         }
         
-        let minusExchangeRate : Double = -pv["exchangeRate"]! - pv["qf"]!
+//        let minusExchangeRate : Double = -pv["exchangeRate"]! - pv["qf"]!
         let lambda : Double = pv["lambda"]!
 //        let J11a : Double = minusExchangeRate - lambda * LAMBDA1 * (1.0 + dphidp1)
 //        let J11b : Double = -(1.0 - lambda) * LAMBDA2 * (1.0 + dphidp2)

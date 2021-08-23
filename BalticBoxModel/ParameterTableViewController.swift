@@ -67,7 +67,7 @@ class ParameterTableViewController: NSViewController, NSTableViewDelegate, NSTab
             }
         }
     }
-    fileprivate var numCalc = 15
+    fileprivate var numCalc = 19
     
    
     fileprivate var params = [Parameter]() {
